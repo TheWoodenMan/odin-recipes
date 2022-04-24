@@ -5,26 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+  href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Favorite Recipes</title>
 </head>
-<body>
-    <header>
+<body class="grid">
+      <!-- Title -->
+    <section class = "logo">
+    <header class="container group">
         <h1> 
             <a href="index.html">Recipes to Astound and Amaze!</a>
         </h1>
-        <h3>A journey through pandemic cookery with TheWoodenMan</h3>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="pasta.html">Pasta</a>
-            <a href="dressings.html">Dressings</a>
-            <a href="sides.html">Side Dishes</a>
-            <a href="indian.html">Indian</a>
-            <a href="asian.html">Asian</a>
-          </nav>  
+        <h3 class="tagline">A journey through pandemic cookery with TheWoodenMan</h3>
+    </section>
+      <!-- Nav Bar -->
+        <nav class="primary-nav nav">
+            <a href="/index.html">Home</a>
+            <a href="/categories/pasta.html">Pasta</a>
+            <a href="/categories/dressings.html">Dressings</a>
+            <a href="/categories/sides.html">Side Dishes</a>
+            <a href="/categories/indian.html">Indian</a>
+            <a href="/categories/asian.html">Asian</a>
+            <a class="btn btn-alt">Sign up to the Mailing List</a>
+            
+              
+        </nav>  
     </header>
-
-      <section>
+  <!-- Mailing List Button -->
+    
+      <!-- Recipe Categories -->
+      <section class="teaser col-1-3 cat">
         <h2>Pasta Dishes</h2>
         <p>Wheat, egg or semolina, anything pasta is here.</p>
  
@@ -32,8 +43,12 @@
         <a href="recipes/carbonara.html">Spaghetti Carbonara</a>
             </ul>
 
-</section>
-<section>
+</section><!--
+  
+    Category
+    
+    -->
+<section class="teaser col-1-3 cat">
     <h2>Salad Dressing</h2>
     <p>Salad is so healthy for you, lets fix that with a lash of olive oil and spices!</p>
 
@@ -42,27 +57,26 @@
     
 </ul>
 
-</section>
-<section>
+</section><!--
+  
+    Category
+    
+    -->
+<section class="teaser col-1-3 cat">
     <h2>Side Dishes</h2>
     <p>Fill yer plate</p>
 
 <ul>
-    <a href="recipes/srirachadressing.html">Sriracha Dressing</a>
+    <a href="recipes/garlicnutoatmeal.html">Garlic Nut Oatmeal Stuffing </a>    
     
 </ul>
 
 </section>
 
-
-
-
-
-
-<a href="recipes/garlicnutoatmeal.html">Garlic Nut Oatmeal Stuffing </a>    
 </body>
-<footer>
-    <nav>
+  <!-- Footer -->
+<footer class="primary-footer container group ">
+    <nav class="nav">
         <a href="/categories/index.html">Home</a>
         <a href="/categories/pasta.html">Pasta</a>
         <a href="/categories/dressings.html">Dressings</a>
@@ -71,9 +85,9 @@
         <a href="/categories/asian.html">Asian</a>
       </nav>  
 
-    <small>&copy; TheWoodenMan</small>
-    <a href="https://twitter.com/Andynwood79" target="_blank">Follow me on Twitter</a>
-    <a href="https://github.com/TheWoodenMan/" target="_blank">Git me baby one more time</a>
+    <small>&copy; TheWoodenMan 2022</small>
+    <a class="social" href="https://twitter.com/Andynwood79" target="_blank">Follow me on Twitter</a>
+    <a class="social" href="https://github.com/TheWoodenMan/" target="_blank">Git me baby one more time</a>
 
   </footer>
 </html>
