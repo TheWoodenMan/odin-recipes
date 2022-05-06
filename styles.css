@@ -330,3 +330,19 @@ p a {
   float: left;
   font-weight: 400;
 }
+.span {
+  display: inline;
+}
+.social {
+  padding: 5px;
+}
+
+.twitter {
+  height: 14px;
+  font-weight: 400;
+}
+
+.github {
+  height: 14px;
+  font-weight: 400;
+}
