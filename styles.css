@@ -2,7 +2,55 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  background: #293f50;
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
 
+footer {
+  clear: both;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+section {
+  display: inline-block;
+  margin: 0 1.5%;
+  width: 30%;
+}
 
 /*
   ========================================
@@ -11,15 +59,18 @@
 */
 
 * {
-	border: 1px solid red;
+  /* border: 1px solid red; */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .container,
 .grid {
@@ -36,53 +87,63 @@
   ========================================
 */
 
-h1, h3, h4, h5, p {
-	margin-bottom: 22px;
-  }
+h1,
+h3,
+h4,
+h5,
+p {
+  margin-bottom: 22px;
+}
 
-  h1, h2, h3, h4 {
-	color: #3A4454;
-  }
+h1,
+h2,
+h3,
+h4 {
+  color: #3a4454;
+}
 
-  h1 {
-	font-size: 36px;
-	line-height: 44px;
-  }
-  h2 {
-	font-size: 24px;
-	line-height: 44px;
-  }
-  h3 {
-	font-size: 21px;
-  }
-  h4 {
-	font-size: 18px;
-  }
-  h5 {
-	color: #a9b2b9;
-	font-size: 14px;
-	font-weight: 400;
-	text-transform: uppercase;
-  }
-  p {
-	text-align: center;
-  }
-  .note {
-	text-decoration: underline;
-  }
-  p {
-	text-indent: 20px;
-  }
-  p {
-	text-shadow: 1px 3px 1px rgba(0, 0, 0, .2);
-  }
-  p {
-	text-transform: uppercase;
-  }
-  p {
-	word-spacing: .25em;
-  }
-  /* p {
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+  color: #f6fff8;
+}
+h2 {
+  font-size: 24px;
+  color: #888888;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+p {
+  text-align: center;
+}
+.note {
+  text-decoration: underline;
+}
+p {
+  text-indent: 20px;
+}
+p {
+  color: #f6fff8;
+  text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+p {
+  text-transform: uppercase;
+}
+p {
+  word-spacing: 0.25em;
+}
+/* p {
 	letter-spacing: -.5em;
   } */
 /*
@@ -91,44 +152,46 @@ h1, h3, h4, h5, p {
   ========================================
 */
 
+a {
+  color: #648880;
+  text-decoration: none;
+}
+a:hover {
+  color: #3a4454;
+}
+p a {
+  border-bottom: 1px solid #dfe2e5;
+}
 
-  a {
-	color: #648880;
-	text-decoration: none;
-  }
-  a:hover {
-	color: #3A4454;
-  }
-  p a {
-	border-bottom: 1px solid #dfe2e5;
-  }
+.social {
+  justify-content: right;
+}
 
-  .social{
-	  justify-content: right;
-  }
-
-  /*
+/*
   ========================================
   Buttons
   ========================================
 */
 
 .btn {
-	border-radius: 5px;
-	display: inline-block;
-	margin: 0;
-	height: 22px;
-	line-height: 22px;
-  }
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin: 0;
+  text-transform: uppercase;
+}
 
-  .btn-alt {
-	border: 1px solid #dfe2e5;
-	padding: 10px 30px;
-	height: 22px;
-	line-height: 22px;
-  }
+.btn-alt {
+  border: 1px solid #dfe2e5;
+  padding: 10px 30px;
+  height: 22px;
+  line-height: 22px;
+}
 
-  /*
+/*
   ========================================
   Clearfix
   ========================================
@@ -154,18 +217,36 @@ h1, h3, h4, h5, p {
 .logo {
   border-top: 4px solid black;
   float: left;
+  left: 0;
+  text-align: center;
   font-size: 48px;
-  font-weight: 100;
-  letter-spacing: .5px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   line-height: 44px;
-  padding: 40px 0 22px 0;
+  padding: 0;
   text-transform: uppercase;
-	background-color: #A1674A;
-  }
-  .tagline {
-	margin: 66px 0 22px 0;
-	text-align: left;
-  }
+  background-color: #95190c;
+  width: 70vw;
+}
+
+.primary-header a,
+.primary-footer a {
+  color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
+
+.tagline {
+  margin: 66px 0 22px 0;
+  color: #888888;
+  text-align: left;
+}
+
+.titlebar {
+  width: 100vw;
+}
 /*
   ========================================
   Navigation
@@ -173,14 +254,23 @@ h1, h3, h4, h5, p {
 */
 
 .nav {
-	text-align: right;
-  }
-  .primary-nav {
-	font-size: 14px;
-	font-weight: 400;
-	letter-spacing: .5px;
-	text-transform: uppercase;
-  }
+  text-align: left;
+  position: fixed;
+  left: 0;
+}
+.primary-nav {
+  font-size: 24px;
+  font-weight: 600;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  width: 10vw;
+  padding: 5px;
+  justify-content: space-around;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
 
 /*
   ========================================
@@ -188,77 +278,55 @@ h1, h3, h4, h5, p {
   ========================================
 */
 
-  .cat {
-	line-height: 44px;
-	padding: 22px 80px 66px 80px;
-	text-align: center;
-  }
-  .cat h2 {
-	font-size: 36px;
-  }
-  .cat p {
-	font-size: 24px;
-  	font-weight: 100;
-  }
+.cat {
+  line-height: 33px;
+  width: 33vh;
+  padding: 22px 80px 66px 80px;
+  text-align: center;
+}
+.cat h2 {
+  font-size: 36px;
+}
+.cat p {
+  font-size: 24px;
+  font-weight: 100;
+}
 
-  .teaser a:hover h2 {
-	color: #a9b2b9;
-  }
+.teaser a:hover h2 {
+  color: #a9b2b9;
+}
+/*
+  ========================================
+  Images
+  ========================================
+*/
 
-
-
-  /*
+.photo {
+  width: 640px;
+  height: 640px;
+  color: #f6fff8;
+  text-align: center;
+  margin: 0 auto;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  background-image: url("/images/meetthechefs640x640.png");
+}
+/*
   ========================================
   Primary footer
   ========================================
 */
 
-..primary-footer {
-	color: #648880;
-	font-size: 14px;
-	font-weight: 400;
-	letter-spacing: .5px;
-	text-transform: uppercase;
-	padding-bottom: 44px;
-	padding-top: 44px;
-  }
-  .primary-footer small {
-	float: left;
-	font-weight: 400;
-  }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+.primary-footer {
+  color: #648880;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding-bottom: 44px;
+  padding-top: 44px;
 }
-body {
-	line-height: 22px;
-    background-color: #C6DDF0;
-	color: #3A4454;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.primary-footer small {
+  float: left;
+  font-weight: 400;
 }
-
-footer {
-	clear: both;
-  }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-section {
-	display: inline-block;
-	margin: 0 1.5%;
-	width: 30%;
-  }
