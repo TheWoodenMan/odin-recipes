@@ -10,40 +10,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Favorite Recipes</title>
 </head>
-<body class="grid">
       <!-- Title -->
+      <section class="kitchen-photo" alt="a stock photo of a kitchen">
+        <h1 class="photo-text">Welcome!</h1>
+      </section>
     <section class = "logo">
-    <header class="container group">
+    <header class="primary-header container group">
         <h1> 
             <a class="titlebar" href="index.html">Recipes to Astound and Amaze!</a>
         </h1>
         <h3 class="tagline">A journey through pandemic cookery with TheWoodenMan</h3>
-    </section>
-      <!-- Nav Bar -->
-        <nav class="primary-nav nav">
-            <a href="/index.html">Home</a>
-            <a href="/categories/pasta.html">Pasta</a>
-            <a href="/categories/dressings.html">Dressings</a>
-            <a href="/categories/sides.html">Side Dishes</a>
-            <a href="/categories/indian.html">Indian</a>
-            <a href="/categories/asian.html">Asian</a>
-            <br>
-           
-            <label for="email" id="email-label">Sign up Here</label>
-        <input id="email" 
-           type="email" 
-           name="email"
-           placeholder="Type your email."
-           required>  
-        </input>
-
-           <input type="submit" id="submit" value="Submit">
-              
-        </nav>  
+    </section> 
     </header>
   <!-- Mailing List Button -->
 <hr>
       <!-- Recipe Categories -->
+      <section class="row">
+      <div class = "grid">
       <section class="teaser col-1-3 cat">
         <h2>Pasta Dishes</h2>
         <p>Wheat, egg or semolina, anything pasta is here.</p>
@@ -58,7 +41,7 @@
     
     -->
 <section class="teaser col-1-3 cat">
-    <h2>Salad Dressing</h2>
+    <h2>Dressings</h2>
     <p>And you thought salad was supposed to be good for you..</p>
 
 <ul>
@@ -80,17 +63,71 @@
     
 </ul>
 
+</section><!--
+  
+    Category
+    
+    -->
+<section class="teaser col-1-3 cat">
+    <h2>Indian</h2>
+    <p>Adapted from traditional recipes</p>
+
+<ul>
+    <a href="recipes/garlicnutoatmeal.html">Garlic Nut Oatmeal Stuffing </a>    
+    
+</ul>
+
+</section><!--
+  
+    Category
+    
+    -->
+<section class="teaser col-1-3 cat">
+    <h2>Asian</h2>
+    <p>Food from around the globe</p>
+
+<ul>
+    <a href="recipes/garlicnutoatmeal.html">Garlic Nut Oatmeal Stuffing </a>    
+    
+</ul>
+
 </section>
-<section class="photo">
+</div>
+      </section>
+      <hr>
+      <section class="row">
+<section class="photo-text chef-photo" alt="a man and a little girl cooking and turning back to smile at the viewer">
     <h1>Meet The Chefs!</h1>
     
 </section>
+</section>
+<hr>
 </body>
   <!-- Footer -->
 <footer>
     <small>&copy; TheWoodenMan 2022</small>
-    <a class="social" href="https://twitter.com/Andynwood79" target="_blank"><span><img class="twitter" src="/images/twitter_thumb.png"> Follow me </span></a>
-    <a class="social" href="https://github.com/TheWoodenMan/" target="_blank"><span><img class="github" src="/images/GitHub-Mark-32px.png"> Git me baby </span></a>
+    <a class="social" href="https://twitter.com/Andynwood79" target="_blank"><span><img class="twitter" src="/images/twitter_thumb.png"> @Andynwood79</span></a>
+    <a class="social" href="https://github.com/TheWoodenMan/" target="_blank"><span><img class="github" src="/images/GitHub-Mark-32px.png"> TheWoodenMan </span></a>
+    <label for="email" id="email-label">Sign up Here</label>
+<input class="mailing" id="email" 
+   type="email" 
+   name="email"
+   placeholder="Type your email."
+   required>  
+</input>
 
+   <input type="submit"  class="mailing" id="submit" value="Submit">
+ 
+ <!-- Nav Bar -->
+ <nav class="navigation">
+     <ul>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/categories/pasta.html">Pasta</a></li>
+    <li><a href="/categories/dressings.html">Dressings</a></li>
+    <li><a href="/categories/sides.html">Side Dishes</a></li>
+    <li><a href="/categories/indian.html">Indian</a></li>
+    <li><a href="/categories/asian.html">Asian</a></li>
+   </ul>     
+</nav> 
   </footer>
 </html>
