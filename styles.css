@@ -84,6 +84,7 @@ section {
 .grid {
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   height: 600px; /* Or whatever */
   width: 960px;
@@ -454,4 +455,11 @@ p a {
 
 .mailing {
   vertical-align: top;
+}
+@media only screen and (max-width: 600px) {
+  .grid {
+    flex-direction: column;
+    width: auto;
+    height: 100vh;
+  }
 }
